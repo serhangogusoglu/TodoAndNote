@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add_note"
+        android:title="Not Ekle"
+        android:icon="@drawable/baseline_edit_note_24" />
+    <item
+        android:id="@+id/menu_add_task"
+        android:title="Görev Ekle"
+        android:icon="@drawable/baseline_add_task_24" />
+</menu>

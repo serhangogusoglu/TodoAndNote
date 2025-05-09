@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="4dp"
+    android:backgroundTint="@color/powderGray"
+    card_view:cardCornerRadius="8dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Görev Başlığı ve Çöp Kutusu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/tvTaskTitle"
+                android:text="Görev Başlığı"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/outline_delete_24"
+                android:contentDescription="Sil"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Görev Açıklaması -->
+        <TextView
+            android:id="@+id/tvTaskDescription"
+            android:text="Görev açıklaması buraya gelecek."
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <!-- Görev Zamanı -->
+        <TextView
+            android:id="@+id/tvTaskTime"
+            android:text="Saat: 12:00"
+            android:textSize="12sp"
+            android:paddingStart="10dp"
+            android:textColor="#888"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
