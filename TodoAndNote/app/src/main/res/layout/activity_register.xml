@@ -12,22 +12,27 @@
         android:layout_height="wrap_content"
         android:text="Kayıt Ol"
         android:textSize="24sp"
+        android:textColor="@color/navyBlue"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
 
     <EditText
         android:id="@+id/etEmailRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="E-posta"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
         android:inputType="textEmailAddress"
         android:layout_marginBottom="16dp" />
 
     <EditText
         android:id="@+id/etPasswordRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Şifre"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
         android:inputType="textPassword"
         android:layout_marginBottom="24dp" />
 
@@ -36,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kayıt Ol"
+        android:backgroundTint="@color/navyBlue"
         android:layout_marginBottom="16dp" />
 
     <TextView
@@ -43,6 +49,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zaten hesabınız var mı? Giriş yapın"
-        android:textColor="@color/purple"
+        android:textColor="@color/powderBlue"
         android:textStyle="bold" />
 </LinearLayout>
